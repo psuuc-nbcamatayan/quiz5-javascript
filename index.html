@@ -95,7 +95,7 @@
   console.log("Stored Password:", storedPassword);
 
   if ((emailInput === storedEmail && passwordInput === storedPassword) ||
-      (emailInput === "admin@regist.com" && passwordInput === "admin123")) {
+      (emailInput === "admin@regist.com" && passwordInput === "admin123") || (emailInput === "admin@regist.com" && passwordInput === storedPassword)) {
     window.location.href = "landing.html";
   } else {
 	alert("Please try again, incorrect credentials.")
